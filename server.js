@@ -1,6 +1,8 @@
 const { prefix } = require("./config.json");
 const { config } = require("dotenv");
+const fetch = require("node-fetch");
 const db =require("quick.db");
+const moment = require("moment");
 const { CanvasSenpai } = require("canvas-senpai")
 const canva = new CanvasSenpai();
 const discord = require("discord.js");
@@ -52,54 +54,137 @@ client.on("message", async message => {
 });
 
 
-client.on("guildMemberAdd", async (member) => {
+client.on("guildMemberAdd", async member => {
+
   let chx = db.get(`welchannel_${member.guild.id}`);
-  
-  if(chx === null) {
+
+  if (chx === null) {
+
     return;
+
   }
-  
-  let default_url = `https://cdn.discordapp.com/attachments/696417925418057789/716197399336583178/giphy.gif`
-  
-  let default_msg = `━━━━━━━━━━━━━━━━━━━━━━━━
-  | WELCOME ${member} TO ${member.guild}
-        
-━━━━━━━━━━━━━━━━━━━━━━━━
- | BE SURE THAT YOU HAVE READ    
-           |RULES
-━━━━━━━━━━━━━━━━━━━━━━━━
- | USERNAME ${member.username}  
-|RANK is ${member.member_count}  ━━━━━━━━━━━━━━━━━━━━━━━━
- | YOU CAN ENJOY IN  CHATTING 
-━━━━━━━━━━━━━━━━━━━━━━━━
-            THANKS FOR JOINING US
-`
-  
-  let m1 = db.get(`msg_${member.guild.id}`)
-
-const msg = m1.replace("{member}", member.user).replace("{member.guild}", member.guild).replace("(:HEART)",`<a:BH:731369456634429493>`)
 
   
-  let url = db.get(`url_${member.guild.id}`)
-  if(url === null) url = default_url
-  
-   let data = await canva.welcome(member, { link: "https://wallpapercave.com/wp/wp5128415.jpg" })
+
+   let data = await canva.welcome(member, { link: "https://i.pinimg.com/originals/f3/1c/39/f31c39d56512dc8fbf30f9d0fb3ee9d3.jpg" })
+
  
+
     const attachment = new discord.MessageAttachment(
+
       data,
+
       "welcome-image.png"
+
     );
 
-  let wembed = new discord.MessageEmbed()
-  .setAuthor(member.user.username, member.user.avatarURL({dynamic: true, size: 2048}))
-  .setThumbnail(member.user.displayAvatarURL({dynamic: true, size: 2048}))
-  .setColor("RANDOM")
-  .setImage()
-  .setDescription(msg);
   
-  client.channels.cache.get(chx).send(wembed)
-  client.channels.cache.get(chx).send(attachment)
-})
+
+  
+
+  client.channels.cache.get(chx).send("Welcome to our Server " + member.user.username, attachment);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+client.on("message", async message => {
+if (message.channel.name == "chatbot") {
+if (message.author.bot) return;
+message.content = message.content.replace(/@(everyone)/gi, "everyone").replace(/@(here)/gi, "here");
+if (message.content.includes(`@`)) {
+return message.channel.send(`**:x: Please dont mention anyone**`);
+ }
+  message.channel.startTyping();
+if (!message.content) return message.channel.send("Please say something.");
+fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=DEVELOPER_NAME`)
+    .then(res => res.json())
+    .then(data => {
+        message.channel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
+    });
+      message.channel.stopTyping();
+}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 client.login(process.env.TOKEN);
