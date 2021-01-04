@@ -1,76 +1,157 @@
-const discord = require("discord.js");
+const { MessageEmbed } = require('discord.js');
+
+const moment = require('moment');
+
+const filterLevels = {
+
+	DISABLED: 'Off',
+
+	MEMBERS_WITHOUT_ROLES: 'No Role',
+
+	ALL_MEMBERS: 'Everyone'
+
+};
+
+const verificationLevels = {
+
+	NONE: 'None',
+
+	LOW: 'Low',
+
+	MEDIUM: 'Medium',
+
+	HIGH: '(╯°□°）╯︵ ┻━┻',
+
+	VERY_HIGH: '┻━┻ ﾐヽ(ಠ益ಠ)ノ彡┻━┻'
+
+};
+
+const regions = {
+
+	brazil: 'Brazil',
+
+	europe: 'Europe',
+
+	hongkong: 'Hong Kong',
+
+	india: 'India',
+
+	japan: 'Japan',
+
+	russia: 'Russia',
+
+	singapore: 'Singapore',
+
+	southafrica: 'South Africa',
+
+	sydeny: 'Sydeny',
+
+	'us-central': 'US Central',
+
+	'us-east': 'US East',
+
+	'us-west': 'US West',
+
+	'us-south': 'US South'
+
+};
 
 module.exports = {
+
   name: "serverinfo",
-  category: "<:info:773053660380135424>info",
-  description: "Get the info of any server",
-  run: async (client, message, args) => {
-    if (message.guild.premiumTier === "Level 0") message.guild.premiumTier = "<:Level0:734479590852132905> 0"
-    if (message.guild.premiumTier === "Level 1") message.guild.premiumTier = "<:713173920475381830:734479841629437982> 1"
-    if (message.guild.premiumTier === "Level 2") message.guild.premiumTier = "<:713173919418548257:734479792052764774> 2"
-    if (message.guild.premiumTier === "Level 3") message.guild.premiumTier = "<:BoostLevel3:734479712029769849> 3"
-    
-    if (message.guild.region === "india") message.guild.region = "🇮🇳 India"
-    if (message.guild.region === "brazil") message.guild.region = "🇧🇷 Brazil"
-    if (message.guild.region === "japan") message.guild.region = "🇯🇵 Japan"
-    if (message.guild.region === "russia") message.guild.region = "🇷🇺 Russia"
-    if (message.guild.region === "europe") message.guild.region = "🇪🇺 Europe"
-    if (message.guild.region === "sydney") message.guild.region = "🇦🇺 Sydney"
-    if (message.guild.region === "singapore") message.guild.region = "🇸🇬 Singapore"
-    if (message.guild.region === "hongkong") message.guild.region = "🇭🇰 Hong Kong"
-    if (message.guild.region === "southafrica") message.guild.region = "🇿🇦 South Africa"
-    if (message.guild.region === "us-east") message.guild.region = "🇺🇸 US East"
-    if (message.guild.region === "us-west") message.guild.region = "🇺🇸 US West"
-    if (message.guild.region === "us-central") message.guild.region = "🇺🇸US Central"
-    if (message.guild.region === "us-south") message.guild.region = "🇺🇸 US South"
-    
-      let boostlevel = message.guild.premiumTier
-    
-    let aicon = message.author.avatarURL({ dynamic: true, size: 2048 });
 
-    let sicon = message.guild.iconURL({ dynamic: true, size: 2048 });
-    
-    let embed = new discord.MessageEmbed()
-      .setTitle(message.guild)
-      .setDescription(
-        `
-> <a:Right:743831162686013553>**OWNER**
-${message.guild.owner.user.tag}
+  category: "Info",
 
-> <a:Right:743831162686013553>**SERVER ID**
-${message.guild.id}
+  aliases: ["serverinfo"],
 
-> <a:Right:743831162686013553>**REGION**
-${message.guild.region}
+  description: "Get info about your server.",
 
-> <a:Right:743831162686013553>**TOTAL MEMBERS  **
-${message.guild.memberCount}
+  usage: "serverinfo ",
 
-> <a:Right:743831162686013553>**TOTAL CHANNELS **
- ${message.guild.channels.cache.size}
+run: (client, message, args) => {
 
-> <a:Right:743831162686013553>**TOTALLY ROLES**
-${message.guild.roles.cache.size}
+		const roles = message.guild.roles.cache.sort((a, b) => b.position - a.position).map(role => role.toString());
 
-> <a:Right:743831162686013553>**TOTAL EMOJI **
-${message.guild.emojis.cache.size}
+		const members = message.guild.members.cache;
 
-> <a:Right:743831162686013553>**SERVER CREATED AT**
-${message.guild.createdAt}
+		const channels = message.guild.channels.cache;
 
-> <a:Right:743831162686013553>**SERVER BOOST**
-${message.guild.premiumSubscriptionCount} 
+		const emojis = message.guild.emojis.cache;
 
-> <a:Right:743831162686013553>**BOOST LEVEL**
-${boostlevel} 
+		const embed = new MessageEmbed()
 
-> <a:Right:743831162686013553>**Security** 
-${message.guild.verificationLevel}
-`)
-      .setThumbnail(message.guild.iconURL())
-      .setColor("RANDOM")
-      .setFooter(message.YOU_PIRO_XD)
+			.setDescription(`**Guild information for __${message.guild.name}__**`)
 
-    message.channel.send(embed);
-  }
+			.setColor('BLUE')
+
+			.setThumbnail(message.guild.iconURL({ dynamic: true }))
+
+			.addField('General', [
+
+				`**❯ Name:** ${message.guild.name}`,
+
+				`**❯ ID:** ${message.guild.id}`,
+
+				`**❯ Owner:** ${message.guild.owner.user.tag} (${message.guild.ownerID})`,
+
+				`**❯ Region:** ${regions[message.guild.region]}`,
+
+				`**❯ Boost Tier:** ${message.guild.premiumTier ? `Tier ${message.guild.premiumTier}` : 'None'}`,
+
+				`**❯ Explicit Filter:** ${filterLevels[message.guild.explicitContentFilter]}`,
+
+				`**❯ Verification Level:** ${verificationLevels[message.guild.verificationLevel]}`,
+
+				`**❯ Time Created:** ${moment(message.guild.createdTimestamp).format('LT')} ${moment(message.guild.createdTimestamp).format('LL')} ${moment(message.guild.createdTimestamp).fromNow()}`,
+
+				'\u200b'
+
+			])
+
+			.addField('Statistics', [
+
+				`**❯ Role Count:** ${roles.length}`,
+
+				`**❯ Emoji Count:** ${emojis.size}`,
+
+				`**❯ Regular Emoji Count:** ${emojis.filter(emoji => !emoji.animated).size}`,
+
+				`**❯ Animated Emoji Count:** ${emojis.filter(emoji => emoji.animated).size}`,
+
+				`**❯ Member Count:** ${message.guild.memberCount}`,
+
+				`**❯ Humans:** ${members.filter(member => !member.user.bot).size}`,
+
+				`**❯ Bots:** ${members.filter(member => member.user.bot).size}`,
+
+				`**❯ Text Channels:** ${channels.filter(channel => channel.type === 'text').size}`,
+
+				`**❯ Voice Channels:** ${channels.filter(channel => channel.type === 'voice').size}`,
+
+				`**❯ Boost Count:** ${message.guild.premiumSubscriptionCount || '0'}`,
+
+				'\u200b'
+
+			])
+
+			.addField('Presence', [
+
+				`**❯ Online:** ${members.filter(member => member.presence.status === 'online').size}`,
+
+				`**❯ Idle:** ${members.filter(member => member.presence.status === 'idle').size}`,
+
+				`**❯ Do Not Disturb:** ${members.filter(member => member.presence.status === 'dnd').size}`,
+
+				`**❯ Offline:** ${members.filter(member => member.presence.status === 'offline').size}`,
+
+				'\u200b'
+
+			])
+
+			.setTimestamp();
+
+		message.channel.send(embed);
+
+	}
+
 };
