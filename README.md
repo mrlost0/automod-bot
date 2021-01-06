@@ -11,10 +11,4 @@ MORE COMMNDS ADD SOOn
 copyright 2020 Automod v12 opne source soon
 
 
-<div align=center>
-
-  <a href="https://dsc.gg/kmdevs">
-
-    <img src="https://discordapp.com/api/guilds/787315610102530048/widget.png?style=shield" alt="shield.png">
-
-  </a>
+<iframe src="https://discord.com/widget?id=787315610102530048&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
