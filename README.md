@@ -11,4 +11,5 @@ MORE COMMNDS ADD SOOn
 copyright 2020 Automod v12 opne source soon
 
 
-<iframe src="https://discord.com/widget?id=787315610102530048&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+https://discord.com/widget?id=787315610102530048&theme=dark
