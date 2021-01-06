@@ -12,4 +12,10 @@ copyright 2020 Automod v12 opne source soon
 
 
 
-https://discord.com/invite/fNmKnkET?utm_source=Discord%20Widget&utm_medium=Connect
+<div align=center>
+
+  <a href="https://dsc.gg/kmdevs">
+
+    <img src="https://discordapp.com/api/guilds/787315610102530048/widget.png?style=shield" alt="shield.png">
+
+  </a>
