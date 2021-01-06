@@ -7,3 +7,10 @@ copyright 2020 Automod v12 opne source soon
 
 
 <img src="https://cdn.discordapp.com/avatars/744597377406599188/e6702461fdea2c92ac16452dfa1edfe4.webp?size=1024" alt="kekw">. 
+
+
+<p align="center">
+
+    <a href="https://discord.gg/typicalbot"><img src="https://discordapp.com/api/guilds/787315610102530048/embed.png?style=shield" alt="Discord"></a>
+
+</p>
