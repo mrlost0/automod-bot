@@ -12,4 +12,4 @@ copyright 2020 Automod v12 opne source soon
 
 
 
-https://discord.com/widget?id=787315610102530048&theme=dark
+https://discord.com/invite/fNmKnkET?utm_source=Discord%20Widget&utm_medium=Connect
