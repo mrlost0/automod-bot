@@ -10,12 +10,4 @@ MORE COMMNDS ADD SOOn
 
 copyright 2020 Automod v12 opne source soon
 
-<p align="center">
-
-    <a href="https://dsc.gg/kmdevs"><img src="https://discordapp.com/api/guilds/787315610102530048/embed.png?style=shield" alt="Discord"></a>
-
-</p>
-
-<img src="https://cdn.discordapp.com/avatars/744597377406599188/e6702461fdea2c92ac16452dfa1edfe4.webp?size=1024" alt="kekw">. 
-
 
