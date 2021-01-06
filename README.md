@@ -11,3 +11,10 @@ MORE COMMNDS ADD SOOn
 copyright 2020 Automod v12 opne source soon
 
 
+<div align=center>
+
+  <a href="https://discord.gg/pnYVdut">
+
+    <img src="https://discordapp.com/api/guilds/787315610102530048/widget.png?style=shield" alt="shield.png">
+
+  </a>
