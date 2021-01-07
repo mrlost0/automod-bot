@@ -129,6 +129,7 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
 
 
 
+const { addexp } = require("./handlers/xp.js")
 
 
 

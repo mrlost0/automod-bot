@@ -33,11 +33,11 @@ const rank = new canvacord.Rank()
     .setUsername(user.username)
     .setDiscriminator(user.discriminator)
     .setRank(1, "a", false)
-    .setBackground("IMAGE", "https://cdn.discordapp.com/attachments/789513810514804746/790112442072039424/80a9750d105c49b56beaaa84a6ff2667.jpg");
+    .setBackground("IMAGE", "https://i.pinimg.com/originals/f3/1c/39/f31c39d56512dc8fbf30f9d0fb3ee9d3.jpg");
 
 rank.build()
     .then(data => {
-        const attachment = new Discord.MessageAttachment(data, "MizukiRankCard.png");
+        const attachment = new Discord.MessageAttachment(data, "automodRankcard.png");
         message.channel.send(attachment);
     });   
     
