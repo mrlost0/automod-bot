@@ -1,4 +1,4 @@
- const db = require("quick.db")
+const db = require("quick.db")
 
 class Util {
   static getLevel(xp, extra = false) {
@@ -15,7 +15,7 @@ class Util {
 
   
   static getLevelxp(level) {
-    return 5 * Math.pow(level, 2) + 50 * level + 100;
+    return 5 * Math.pow(level, 2) + 50 * level + 200;
   }
   
   static getInfo(exp) {
@@ -29,12 +29,12 @@ class Util {
     let toadd = Math.floor(Math.random() * 3 + 3);
     let oldxp = db.get(`xp_${message.author.id}_${message.guild.id}`)
     let oldlvl = Util.getLevel(oldxp)
-    let newxp = oldxp + toadd;
+    let newxp = oldxp = toadd;
     let newlvl = Util.getLevel(newxp);
     
     
-    if(newlvl > oldlvl) message.channel.send(`${message.author}, You just reached level ${newlvl}`)
-    
+    if(newlvl > oldlvl) 
+    message.channel.send(`${message.author}, You just reached level ${newlvl}`)
     db.add(`xp_${message.author.id}_${message.guild.id}`, toadd)
   }
 }

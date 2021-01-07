@@ -138,6 +138,13 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
 
 
 
+//LEVEL
+client.on("message", async message => {
+if(message.author.bot) return;
+  if(!message.guild) return;
+  
+return addexp(message)
+})
 
 
 

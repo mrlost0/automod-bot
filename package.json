@@ -13,6 +13,7 @@
     "akaneko": "^3.0.2",
     "ascii-table": "^0.0.9",
     "axios": "^0.21.1",
+    "canvacord": "^5.0.8",
     "canvas-senpai": "^0.1.6",
     "cpu-stat": "^2.0.1",
     "discord.js": "^12.3.1",
