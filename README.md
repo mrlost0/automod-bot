@@ -37,7 +37,7 @@ Karma has a lot of features, with **8 main categories**:
 
 MORE COMMNDS ADD SOOn 
 
-**[SUPPORT SERVER](https://discord.gg/RJ2SRN2cVu)**||
+**[SUPPORT SERVER](https://dsc.gg/kmdevs)**||
 
 **[INVITE BOT](https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot)**
 
