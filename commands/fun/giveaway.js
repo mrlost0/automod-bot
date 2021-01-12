@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports={
  name: 'giveway',
-    category: 'Fun',
+    category: 'fun',
     description: 'Giveaway command',
     run: async(bot,message,args)=>{
   if (!args[0]) return message.channel.send('❌ ?giveaway <time> <gift>');

@@ -60,7 +60,7 @@ module.exports = {
 
   name: "serverinfo",
 
-  category: "Info",
+  category: "info",
 
   aliases: ["serverinfo"],
 

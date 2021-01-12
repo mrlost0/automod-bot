@@ -3,8 +3,8 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
 name: "announce",
-aliases: ["announce", "a"],
-category: "Utility",
+aliases: ["", "a"],
+category: "moderation",
 usage: "embed <text to say>",
 description: "Returns provided text in Embed form.",
 run: async(client, message, args) => {

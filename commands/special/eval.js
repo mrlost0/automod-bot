@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client()
 module.exports = {
     name: 'eval',
+    category: 'owner',
     run: async (client, message, args) => {
         if (message.author.id !== '682981714523586606') return message.channel.send("You do not have permission to use this command!");
         const embed = new MessageEmbed()

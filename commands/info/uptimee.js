@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const Discord = require("discord.js");
 module.exports = {
   name: "uptime",
-  category: "bot",
+  category: "info",
   description: "Shows Bot's Uptime.",
   usage: "uptime",
 

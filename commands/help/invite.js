@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports = {
   name: "invite",
-  category: "help",
+  category: "info",
   description: "INVITE Automodv12 beta BOT",
   run: async (client, message, args) => {
     
