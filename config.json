@@ -1,7 +1,7 @@
 {
   "prefix": "q",
      
- "GOOGLE_API_KEY": "AIzaSyCpgbji1klCW_v6220mRyr3eY-WIFmXOKE",
+ "YOUTUBE_API_KEY": "AIzaSyCpgbji1klCW_v6220mRyr3eY-WIFmXOKE",
     "QUEUE_LIMIT": 0,
     "COLOR": "00FFFF"
 }

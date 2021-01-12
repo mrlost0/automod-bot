@@ -89,29 +89,16 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get(chx).send("Welcome to our Server " + member.user.username, attachment);
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//prefix
+client.on("message", async message => {
+if(!message.guild) return;
+  let prefix = db.get(`prefix_${message.guild.id}`)
+  if(prefix === null) prefix = prefix;
+  
+  if(!message.content.startsWith(prefix)) return;
+ 
+})
+//chatbot
 
 client.on("message", async message => {
 if (message.channel.name == "chatbot") {
@@ -131,7 +118,7 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
 }
 });
 
-
+//LEVEL
 
 const { addexp } = require("./handlers/xp.js")
 
@@ -161,7 +148,43 @@ return addexp(message)
 
 
 
+client.on("guildCreate", guild => {
 
+  const { MessageEmbed } = require("discord.js");
+
+  const ID = "787340979148947466";
+
+  const channel = client.channels.cache.get(ID);
+
+  const sowner = guild.owner.user;
+
+  if (!channel) return;
+
+  const embed = new MessageEmbed()
+
+    .setTitle("**I Joined a Server!**")
+
+    .addField(`**SERVER NAME**`, `\`\`\`${guild.name}\`\`\``)
+
+    .addField(`**SERVER ID**`, `\`\`\`${guild.id}\`\`\``)
+
+    .addField(`**SERVER OWNER**`, `\`\`\`${sowner.tag}\`\`\``)
+
+    .addField(`**OWNER ID**`, `\`\`\`${sowner.id}\`\`\``)
+ 
+    .addField(`**CREATED ON**`, `\`\`\`${guild.createdAt}\`\`\``)
+  
+    .addField(`**MEMBERS**`, `\`\`\`${guild.memberCount}\`\`\``)
+  
+    .setTimestamp()
+
+    .setColor("32CD32")
+
+    .setFooter(`Servers Count - ${client.guilds.cache.size}`);
+
+  channel.send(embed);
+
+});
 
 
 
