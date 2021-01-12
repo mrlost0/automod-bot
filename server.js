@@ -9,6 +9,10 @@ const discord = require("discord.js");
 const client = new discord.Client({
   disableEveryone: false
 });
+const yts = require('yt-search')
+
+client.queue = new Map();
+client.vote = new Map();
 
 
 require("./uptime.js");
@@ -174,18 +178,57 @@ return addexp(message)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-
-
-
-
-
-
-
-
-
-
-
 
 
 
