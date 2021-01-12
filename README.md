@@ -2,7 +2,7 @@
 
 ## Categories 📑
 
-- [x] music soon
+- [x] music soon .
 
 - [x] Fun
 
