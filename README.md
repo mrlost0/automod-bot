@@ -16,7 +16,7 @@
 
 - [X] ChatBot 
 make channel called chatbot to work cahtbot commnd
-Karma has a lot of features, with **8 main categories**:
+Automodv12  has a lot of features, with **8 main categories**:
 
 *   🎵 **Music**: `play`, `skip`, `queue`, `np`,`filters` and **8** more! 
 
