@@ -2,37 +2,22 @@
 
 ## Categories 📑
 
-- [x] music soon .
 
-- [x] Fun
 
-- [x] moderation
+- [x] Fun [17]
 
-- [x] NSFW
+- [x] moderation[17]
 
-- [x] Utility
+- [x] NSFW[12]
 
-- [X] Image
+- [x] info[90]
 
-- [X] ChatBot 
-make channel called chatbot to work cahtbot commnd
-Karma has a lot of features, with **8 main categories**:
+- [X] Image[14]
 
-*   🎵 **Music**: `play`, `skip`, `queue`, `np`,`filters` and **8** more! 
+- [X] ChatBot [1]
+- [X] owner [2]
 
-*   👩‍💼 **Information**: `info`, `help`, `invite` and **14** more! 
 
-*   🚓 **Anime soon**: `anime`, `hug`, `karma`, `neko` and **3** more! 
-
-*   🤖 **ChatBot**: `chatbot` and **2** more! 
-
-*   👻 **Fun**: `binary`, `clyde`, `comment`, `eject`, `iq`, `reddit` and **7** more!
-
-*   🖨️ **Image**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
-
-*   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
-
-*   👑 **Owner**: `eval`
 
 
 MORE COMMNDS ADD SOOn 
