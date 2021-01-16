@@ -1,4 +1,4 @@
-const { prefix } = require("./config.json");
+const { default_prefix } = require("./config.json");
 const { config } = require("dotenv");
 const fetch = require("node-fetch");
 const db =require("quick.db");
@@ -26,7 +26,7 @@ client.aliases = new discord.Collection();
 
 client.on("ready", () => {
   console.log(` ${client.user.username} is turned on`);
-  client.user.setActivity(`qhelp`,{type:"STREAMING"});
+  client.user.setActivity(`qhelp`,{type:"playing"});
 });
 
 client.on("message", async message => {
@@ -37,13 +37,13 @@ client.on("message", async message => {
 
   if (message.author.bot) return;
   if (!message.guild) return;
-  if (!message.content.startsWith(prefix)) return;
+  if (!message.content.startsWith(default_prefix)) return;
 
   if (!message.member)
     message.member = await message.guild.fetchMember(message);
 
   const args = message.content
-    .slice(prefix.length)
+    .slice(default_prefix.length)
     .trim()
     .split(/ +/g);
   const cmd = args.shift().toLowerCase();
@@ -89,11 +89,12 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get(chx).send("Welcome to our Server " + member.user.username, attachment);
 
 });
-//prefix
+//PREFIX
+//PREFIX
 client.on("message", async message => {
 if(!message.guild) return;
   let prefix = db.get(`prefix_${message.guild.id}`)
-  if(prefix === null) prefix = prefix;
+  if(prefix === null) prefix = default_prefix;
   
   if(!message.content.startsWith(prefix)) return;
  
@@ -207,6 +208,31 @@ client.on("guildCreate", guild => {
 
 
 
+
+
+client.on('guildMemberUpdate', async (oldMember, newMember) => {
+
+    let boostColor = '#ff73fa';
+
+    if (!oldMember.premiumSince && newMember.premiumSince) {
+        
+        let embed = new discord.MessageEmbed()
+        .setColor(boostColor)
+        .setDescription(`${newMember.user.tag} just boosted the server!`);
+
+        return message.channel.send(embed);
+    }
+
+    if (oldMember.premiumSince && newMember.premiumSince) {
+
+        let embed = new discord.MessageEmbed()
+        .setColor(boostColor)
+        .setDescription(`${newMember.user.tag} just boosted the server again!`);
+
+        return message.channel.send(embed);
+    }
+
+});
 
 
 

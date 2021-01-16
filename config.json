@@ -1,5 +1,6 @@
 {
   "prefix": "q",
+  "default_prefix": "q",
      
  "YOUTUBE_API_KEY": "AIzaSyCpgbji1klCW_v6220mRyr3eY-WIFmXOKE",
     "QUEUE_LIMIT": 0,

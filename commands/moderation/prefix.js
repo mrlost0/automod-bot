@@ -1,5 +1,5 @@
 const db = require("quick.db")
-const { prefix } = require("../../config.json")
+const { default_prefix } = require("../../config.json")
 
 module.exports = {
   name: "prefix",
@@ -21,7 +21,7 @@ module.exports = {
       return message.channel.send("You can't set Prefix which is Having more than 3 Characters.")
     }
     
-    if(args.join("") === prefix) {
+    if(args.join("") === default_prefix) {
       db.delete(`prefix_${message.guild.id}`)
      return await message.channel.send("Reseted Prefix ✅")
     }

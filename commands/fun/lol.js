@@ -4,7 +4,7 @@ const { parse } = require("twemoji-parser");
 
 module.exports = {
   name: "emojiadd",
-  category: "<:mod:789590144650051604> moderation",
+  category: "moderation",
   usage: "stealemoji <emoji> <custom name>",
   description: "Steal an emoji from a different server",
   botPermissions: ["MANAGE_EMOJIS"],
