@@ -36,6 +36,12 @@ Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/st
 
 
 **
+## stats
+<a href="https://youtu.be/TXzZABndSj8">
+
+  <img titile="SRC" src="https://github-readme-stats.vercel.app/api/pin/?username=khanmanan&repo=automod-bot&theme=algolia&icon_color=0000ff">
+
+</a>
 
 ## 💨 Run the projects
 
