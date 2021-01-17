@@ -51,4 +51,4 @@ Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](ht
 
 [![support](https://discordapp.com/api/guilds/787315610102530048/embed.png?style=banner2)](https://dsc.gg/kmdevs)
 
-##copyright ©️ 2020 Automod v12 opne source soon
+##copyright ©️ 2020 Automod v12 opne source
