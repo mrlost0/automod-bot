@@ -24,11 +24,8 @@ automodv12bot has a lot of features, with **8 main categories**:
 
 *   **Anime soon**: `anime`, `hug`, `, `neko` and **3** more! 
 - [x] moderation[17]
-
 - [x] NSFW[12]
-
 - [x] info[90]
-
 - [X] Image[14]
 - [X] ChatBot [1]
 - [X] owner [2]
@@ -39,7 +36,6 @@ automodv12bot has a lot of features, with **8 main categories**:
 *   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
 
 *   👑 **Owner**: `eval,serverlist`
-=======
 
 
 MORE COMMNDS ADD SOOn 
@@ -75,9 +71,5 @@ Glitch: [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a
 
 Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](https://repl.it/github/Khanmanan/automod-bot)
 
-[![support](https://discordapp.com/api/guilds/787315610102530048/embed.png?style=banner2)](https://dsc.gg/kmdevs)
 
-
-##copyright ©️ 2020 Automod vhttps://1
-=======
 ##copyright ©️ 2020 Automod v12 opne 
