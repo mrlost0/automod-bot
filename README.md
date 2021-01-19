@@ -20,18 +20,19 @@ IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
 
 <br><br>
 </div>
-## 📝 Tutorial
-
-Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/TXzZABndSj8)
-
-** How to host watch' video <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/NlCufWQUL54)
-**
 ## stats
 <a href="https://youtu.be/TXzZABndSj8">
 
   <img titile="SRC" src="https://github-readme-stats.vercel.app/api/pin/?username=khanmanan&repo=automod-bot&theme=algolia&icon_color=0000ff">
 
 </a>
+
+## 📝 Tutorial
+
+Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/TXzZABndSj8)
+
+** How to host watch' video <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/NlCufWQUL54)
+**
 
 ## 💨 Run the projects
 
