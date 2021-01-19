@@ -13,8 +13,6 @@ Id- 682981714523586606
 
 - [x] NSFW
 
-
-
 - [x] Fun [17]
 
 - [X] ChatBot 
@@ -25,7 +23,6 @@ automodv12bot has a lot of features, with **8 main categories**:
 *    **Information**: `info`, `help`, `invite` and **14** more! 
 
 *   **Anime soon**: `anime`, `hug`, `, `neko` and **3** more! 
-=======
 - [x] moderation[17]
 
 - [x] NSFW[12]
@@ -33,8 +30,6 @@ automodv12bot has a lot of features, with **8 main categories**:
 - [x] info[90]
 
 - [X] Image[14]
-
-
 - [X] ChatBot [1]
 - [X] owner [2]
 
@@ -52,7 +47,11 @@ MORE COMMNDS ADD SOOn
 **[SUPPORT SERVER](https://dsc.gg/kmdevs)**||
 
 **[INVITE BOT](https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot)**
+### Support Discord Servers
+<a href="https://discord.gg/gQaptwMnyz"><img src="http://invidget.switchblade.xyz/gQaptwMnyz"/></a>
 
+<br><br>
+</div>
 
 
 ## 📝 Tutorial
