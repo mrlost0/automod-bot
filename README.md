@@ -1,7 +1,9 @@
 ## MY FISRT MODERATION BOT MADE USING DISCORD.JS 
-
+## Made by tag:- cw Khan#6496
+Id- 682981714523586606
 ## Categories 📑
 
+<<<<<<< HEAD
 - [x] music soon .
 
 - [x] Fun.
@@ -10,11 +12,13 @@
 - [x] moderation
 
 - [x] NSFW
+=======
+>>>>>>> origin/Repl.it
 
-- [x] Utility
 
-- [X] Image
+- [x] Fun [17]
 
+<<<<<<< HEAD
 - [X] ChatBot 
 make channel called chatbot to work cahtbot commnd
 automodv12bot has a lot of features, with **8 main categories**:
@@ -23,14 +27,28 @@ automodv12bot has a lot of features, with **8 main categories**:
 *    **Information**: `info`, `help`, `invite` and **14** more! 
 
 *   **Anime soon**: `anime`, `hug`, `, `neko` and **3** more! 
+=======
+- [x] moderation[17]
 
-*   🤖 **ChatBot**: `chatbot` and **2** more! 
+- [x] NSFW[12]
 
+- [x] info[90]
+
+- [X] Image[14]
+>>>>>>> origin/Repl.it
+
+- [X] ChatBot [1]
+- [X] owner [2]
+
+<<<<<<< HEAD
 *   👻 **Fun**: `binary`, `clyde`, `comment`,e**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
 
 *   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
 
 *   👑 **Owner**: `eval,serverlist`
+=======
+
+>>>>>>> origin/Repl.it
 
 
 MORE COMMNDS ADD SOOn 
@@ -49,6 +67,12 @@ Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/st
 
 
 **
+## stats
+<a href="https://youtu.be/TXzZABndSj8">
+
+  <img titile="SRC" src="https://github-readme-stats.vercel.app/api/pin/?username=khanmanan&repo=automod-bot&theme=algolia&icon_color=0000ff">
+
+</a>
 
 ## 💨 Run the projects
 
@@ -58,4 +82,8 @@ Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](ht
 
 [![support](https://discordapp.com/api/guilds/787315610102530048/embed.png?style=banner2)](https://dsc.gg/kmdevs)
 
+<<<<<<< HEAD
 ##copyright ©️ 2020 Automod vhttps://1
+=======
+##copyright ©️ 2020 Automod v12 opne source
+>>>>>>> origin/Repl.it
