@@ -3,7 +3,7 @@
 Id- 682981714523586606
 ## Categories 📑
 
-<<<<<<< HEAD
+
 - [x] music soon .
 
 - [x] Fun.
@@ -12,13 +12,11 @@ Id- 682981714523586606
 - [x] moderation
 
 - [x] NSFW
-=======
->>>>>>> origin/Repl.it
+
 
 
 - [x] Fun [17]
 
-<<<<<<< HEAD
 - [X] ChatBot 
 make channel called chatbot to work cahtbot commnd
 automodv12bot has a lot of features, with **8 main categories**:
@@ -35,20 +33,18 @@ automodv12bot has a lot of features, with **8 main categories**:
 - [x] info[90]
 
 - [X] Image[14]
->>>>>>> origin/Repl.it
+
 
 - [X] ChatBot [1]
 - [X] owner [2]
 
-<<<<<<< HEAD
+
 *   👻 **Fun**: `binary`, `clyde`, `comment`,e**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
 
 *   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
 
 *   👑 **Owner**: `eval,serverlist`
 =======
-
->>>>>>> origin/Repl.it
 
 
 MORE COMMNDS ADD SOOn 
@@ -82,8 +78,7 @@ Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](ht
 
 [![support](https://discordapp.com/api/guilds/787315610102530048/embed.png?style=banner2)](https://dsc.gg/kmdevs)
 
-<<<<<<< HEAD
+
 ##copyright ©️ 2020 Automod vhttps://1
 =======
-##copyright ©️ 2020 Automod v12 opne source
->>>>>>> origin/Repl.it
+##copyright ©️ 2020 Automod v12 opne 

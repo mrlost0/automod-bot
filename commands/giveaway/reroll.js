@@ -5,7 +5,7 @@ module.exports = {
   description:
     "Get list of all command and even get to know every command detials",
   usage: "help <cmd>",
-  category: "info",
+  category:"giveaway",
     run: async (bot, message, args) => {
        if(!message.member.hasPermission('MANAGE_MESSAGES') && !message.member.roles.cache.some((r) => r.name === "Giveaways")){
         return message.channel.send(':x: You need to have the manage messages permissions to reroll giveaways.');
