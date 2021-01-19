@@ -5,41 +5,13 @@ Id- 682981714523586606
 
 
 - [x] music soon .
-
-- [x] Fun.
-- _
-
 - [x] moderation
-
-- [x] NSFW
-
-- [x] Fun [17]
-
-- [X] ChatBot 
-make channel called chatbot to work cahtbot commnd
-automodv12bot has a lot of features, with **8 main categories**:
-
-
-*    **Information**: `info`, `help`, `invite` and **14** more! 
-
-*   **Anime soon**: `anime`, `hug`, `, `neko` and **3** more! 
-- [x] moderation[17]
-- [x] NSFW[12]
-- [x] info[90]
-- [X] Image[14]
-- [X] ChatBot [1]
-- [X] owner [2]
-
-
-*   👻 **Fun**: `binary`, `clyde`, `comment`,e**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
-
-*   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
-
-*   👑 **Owner**: `eval,serverlist`
-
-
-MORE COMMNDS ADD SOOn 
-
+- [x] NSFW 
+- [x] Info
+- [x] giveway
+- [x] fun
+A FUN AND MODERATION BOT WITH 85+ COMMNDS 
+IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
 **[SUPPORT SERVER](https://dsc.gg/kmdevs)**||
 
 **[INVITE BOT](https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot)**
@@ -48,15 +20,11 @@ MORE COMMNDS ADD SOOn
 
 <br><br>
 </div>
-
-
 ## 📝 Tutorial
 
 Tutorial has been uploaded on YouTube <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/TXzZABndSj8)
 
 ** How to host watch' video <img src="https://www.youtube.com/about/static/svgs/icons/brand-resources/YouTube_icon_full-color.svg?cache=f2ec7a5" width="30px"> Watch it by clicking [here](https://youtu.be/NlCufWQUL54)
-
-
 **
 ## stats
 <a href="https://youtu.be/TXzZABndSj8">
@@ -72,4 +40,4 @@ Glitch: [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a
 Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](https://repl.it/github/Khanmanan/automod-bot)
 
 
-##copyright ©️ 2020 Automod v12 opne 
+##copyright ©️ 2020 Automod v12
