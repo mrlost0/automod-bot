@@ -4,7 +4,8 @@
 
 - [x] music soon .
 
-- [x] Fun
+- [x] Fun.
+- _
 
 - [x] moderation
 
@@ -16,23 +17,20 @@
 
 - [X] ChatBot 
 make channel called chatbot to work cahtbot commnd
-Karma has a lot of features, with **8 main categories**:
+automodv12bot has a lot of features, with **8 main categories**:
 
-*   🎵 **Music**: `play`, `skip`, `queue`, `np`,`filters` and **8** more! 
 
-*   👩‍💼 **Information**: `info`, `help`, `invite` and **14** more! 
+*    **Information**: `info`, `help`, `invite` and **14** more! 
 
-*   🚓 **Anime soon**: `anime`, `hug`, `karma`, `neko` and **3** more! 
+*   **Anime soon**: `anime`, `hug`, `, `neko` and **3** more! 
 
 *   🤖 **ChatBot**: `chatbot` and **2** more! 
 
-*   👻 **Fun**: `binary`, `clyde`, `comment`, `eject`, `iq`, `reddit` and **7** more!
-
-*   🖨️ **Image**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
+*   👻 **Fun**: `binary`, `clyde`, `comment`,e**: `fire`, `respect`, `scary`, `triggered` and **6** more! 
 
 *   ✉️ **Other**: `profile`, `addemoji`, `snipe`, `wiki` and **3** more!
 
-*   👑 **Owner**: `eval`
+*   👑 **Owner**: `eval,serverlist`
 
 
 MORE COMMNDS ADD SOOn 
@@ -60,4 +58,4 @@ Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](ht
 
 [![support](https://discordapp.com/api/guilds/787315610102530048/embed.png?style=banner2)](https://dsc.gg/kmdevs)
 
-##copyright ©️ 2020 Automod v12 opne source soon
+##copyright ©️ 2020 Automod vhttps://1

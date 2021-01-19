@@ -13,6 +13,7 @@ const yts = require('yt-search')
 
 client.queue = new Map();
 client.vote = new Map();
+const { ready } = require("./handlers/ready.js")
 
 
 require("./uptime.js");
@@ -24,15 +25,10 @@ client.aliases = new discord.Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-client.on("ready", () => {
-  console.log(` ${client.user.username} is turned on`);
-  client.user.setActivity(`qhelp`,{type:"playing"});
-});
-
 client.on("message", async message => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
-    return message.reply(`My prefix is \`${prefix}\``);
+    return message.reply(`My prefix is \`${default_prefix}\``);
   }
 
   if (message.author.bot) return;
@@ -138,6 +134,60 @@ if(message.author.bot) return;
   
 return addexp(message)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const { GiveawaysManager } = require("discord-giveaways");
+// Starts updating currents giveaways
+const manager = new GiveawaysManager(client, {
+    storage: "./handlers/giveaways.json",
+    updateCountdownEvery: 10000,
+    default: {
+        botsCanWin: false,
+        exemptPermissions: [ "MANAGE_MESSAGES", "ADMINISTRATOR" ],
+        embedColor: "#FF0000",
+        reaction: "🎉"
+    }
+});
+// We now have a giveawaysManager property to access the manager everywhere!
+client.giveawaysManager = manager;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -256,35 +306,15 @@ client.on('guildMemberUpdate', async (oldMember, newMember) => {
 
 
 
+// Set the bot's online/idle/dnd/invisible status
+client.on("ready", () => {
+    client.user.setStatus("online");
+    console.log("automodv12 beta is ready join support server https://dsc.gg/kmdevs")
+});
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
+client.on("ready", () => {
+    client.user.setActivity("q help", { type: "WATCHING"})
+})
 client.login(process.env.TOKEN);

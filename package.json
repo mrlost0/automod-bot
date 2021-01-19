@@ -16,6 +16,7 @@
     "canvacord": "^5.0.8",
     "canvas-senpai": "^0.1.6",
     "cpu-stat": "^2.0.1",
+    "discord-giveaways": "^4.4.3",
     "discord.js": "^12.3.1",
     "discord.js-commando": "^0.10.0",
     "dotenv": "^8.2.0",
