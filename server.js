@@ -260,35 +260,6 @@ client.on("guildCreate", guild => {
 
 
 
-client.on('guildMemberUpdate', async (oldMember, newMember) => {
-
-    let boostColor = '#ff73fa';
-
-    if (!oldMember.premiumSince && newMember.premiumSince) {
-        
-        let embed = new discord.MessageEmbed()
-        .setColor(boostColor)
-        .setDescription(`${newMember.user.tag} just boosted the server!`);
-
-        return message.channel.send(embed);
-    }
-
-    if (oldMember.premiumSince && newMember.premiumSince) {
-
-        let embed = new discord.MessageEmbed()
-        .setColor(boostColor)
-        .setDescription(`${newMember.user.tag} just boosted the server again!`);
-
-        return message.channel.send(embed);
-    }
-
-});
-
-
-
-
-
-
 
 
 
