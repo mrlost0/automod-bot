@@ -1,9 +1,10 @@
 const db = require("quick.db")
 const { default_prefix } = require("../../config.json")
+
 module.exports = {
   name: "prefix",
   category: "moderation",
-  usage: "prefix <new-prefix>",
+  usage: "prefix <-prefix>",
   description: "Change Guild's Prefix to What u Want.",
   authorPermission: ["ADMINISTRATOR"],
   run: async (client, message, args) => {

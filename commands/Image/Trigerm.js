@@ -1,17 +1,26 @@
-const Color = "RANDOM", Random = require("srod-v2");
-const Discord = require("discord.js");
+const canvacord = require ("canvacord")
 
-module.exports = {
-  name: "triggered",
-  aliases: ["tgd"],
-  category: "Image",
-  description: "Return A Triggered Image!",
-  usage: "Triggered | <Mention Or ID>",
-  run: async (client, message, args) => {
-    
-    const Member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
-    const Data = await Random.Triggered({ Image: Member.user.displayAvatarURL({ format: "png" }), Color: Color });
+const { MessageAttachment } = require("discord.js")
+module.exports= {
+  name:"triggered",
+  description:"trigger some one",
+  category:"images",
+  aliases: ["tg"],
+run: async (client, message, args) => {
+async function create() {
+    let img = await canvacord.Canvas.trigger("./image.png");
+    canvacord.write(img, "triggered.gif");
+ 
+    let color = await canvacord.color("#4E5D94");
+    canvacord.write(color, "color.png");
+}
+ 
+create()
 
-    return message.channel.send(Data);
-  }
-};
+    let user = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author;
+    let faceplam = await canvacord.Canvas.trigger(user.displayAvatarURL({ format: "png", dynamic: true }));
+    let attachment = new MessageAttachment(faceplam, "triggered.gif");
+    return message.channel.send(attachment);
+}
+
+}

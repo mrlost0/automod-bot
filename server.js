@@ -85,16 +85,7 @@ client.on("guildMemberAdd", async member => {
   client.channels.cache.get(chx).send("Welcome to our Server " + member.user.username, attachment);
 
 });
-//PREFIX
-//PREFIX
-client.on("message", async message => {
-if(!message.guild) return;
-  let prefix = db.get(`prefix_${message.guild.id}`)
-  if(prefix === null) prefix = default_prefix;
-  
-  if(!message.content.startsWith(prefix)) return;
- 
-})
+
 //chatbot
 
 client.on("message", async message => {
@@ -119,14 +110,6 @@ fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(me
 
 const { addexp } = require("./handlers/xp.js")
 
-
-
-
-
-
-
-
-
 //LEVEL
 client.on("message", async message => {
 if(message.author.bot) return;
@@ -135,28 +118,17 @@ if(message.author.bot) return;
 return addexp(message)
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+client.snipes = new Map()
+client.on('messageDelete', function(message, channel){
+  
+  client.snipes.set(message.channel.id, {
+    content:message.content,
+    author:message.author.tag,
+    image:message.attachments.first() ? message.attachments.first().proxyURL : null
+  })
+  
+})
+ 
 
 const { GiveawaysManager } = require("discord-giveaways");
 // Starts updating currents giveaways
@@ -173,31 +145,14 @@ const manager = new GiveawaysManager(client, {
 // We now have a giveawaysManager property to access the manager everywhere!
 client.giveawaysManager = manager;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+client.on("message", async message => {
+if(!message.guild) return;
+  let prefix = db.get(`default_prefix${message.guild.id}`)
+  if(prefix === null) prefix =default_prefix;
+  
+  if(!message.content.startsWith(default_prefix)) return;
+ 
+})
 
 client.on("guildCreate", guild => {
 
@@ -238,45 +193,6 @@ client.on("guildCreate", guild => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Set the bot's online/idle/dnd/invisible status
 client.on("ready", () => {
     client.user.setStatus("online");
@@ -286,6 +202,6 @@ client.on("ready", () => {
 
 
 client.on("ready", () => {
-    client.user.setActivity("q help", { type: "WATCHING"})
+    client.user.setActivity(`qhelp |Servers Count - ${client.guilds.cache.size}`, { type: "WATCHING"})
 })
 client.login(process.env.TOKEN);
