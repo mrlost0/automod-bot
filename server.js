@@ -158,7 +158,7 @@ client.on("guildCreate", guild => {
 
   const { MessageEmbed } = require("discord.js");
 
-  const ID = "787340979148947466";
+  const ID = "812592666286096404";
 
   const channel = client.channels.cache.get(ID);
 

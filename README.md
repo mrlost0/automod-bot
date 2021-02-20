@@ -4,12 +4,12 @@ Id- 682981714523586606
 ## Categories 📑
 
 
-- [x] music soon .
-- [x] moderation
-- [x] NSFW 
-- [x] Info
-- [x] giveway
-- [x] fun
+- ✅ music soon .
+- ✅ moderation
+- ✅ NSFW 
+- ✅ Info
+- ✅ giveway
+- ✅ fun
 
 A FUN AND MODERATION BOT WITH 85+ COMMNDS 
 IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
