@@ -201,6 +201,37 @@ client.on("ready", () => {
 
 
 
+
+client.on("message", async message => {
+if(!message.guild) return;
+  let prefix = db.get(`prefix_${message.guild.id}`)
+  if(prefix === null) prefix = default_prefix;
+  
+  if(!message.content.startsWith(prefix)) return;
+ 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on("ready", () => {
     client.user.setActivity(`qhelp |Servers Count - ${client.guilds.cache.size}`, { type: "WATCHING"})
 })

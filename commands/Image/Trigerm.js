@@ -4,7 +4,7 @@ const { MessageAttachment } = require("discord.js")
 module.exports= {
   name:"triggered",
   description:"trigger some one",
-  category:"images",
+  category:"Image",
   aliases: ["tg"],
 run: async (client, message, args) => {
 async function create() {
