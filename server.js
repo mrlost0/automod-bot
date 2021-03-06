@@ -16,7 +16,6 @@ client.vote = new Map();
 const { ready } = require("./handlers/ready.js")
 
 
-require("./uptime.js");
 
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
@@ -215,8 +214,15 @@ if(!message.guild) return;
 
 
 
+client.on('voiceStateUpdate', (old, New) => {
+    if(old.id !== client.user.id) return
+    if(old.channelID && !New.channelID) client.queue.delete(old.guild.id)
+})
 
-
+client.on('ready', () => {
+var channel = client.channels.cache.get('812592647876247579');
+    if (channel) channel.join();
+});
 
 
 
