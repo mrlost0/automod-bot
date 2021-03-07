@@ -23,11 +23,11 @@ IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
 
 <br><br>
 </div>
-### stats
 
 
-
-
+<a href="https://discord.com/api/oauth2/authorize?client_id=744597377406599188&permissions=8&scope=bot">
+    <img src="https://cdn.discordapp.com/avatars/744597377406599188/9e8f35539dcf29deadaffbf9a6d89927.webp?size=1024" alt="Midoriya" />
+</a>
 <a href="https://youtu.be/TXzZABndSj8">
 
   <img titile="SRC" src="https://github-readme-stats.vercel.app/api/pin/?username=khanmanan&repo=automod-bot&theme=algolia&icon_color=0000ff">
