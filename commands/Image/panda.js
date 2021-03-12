@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 
 module.exports = {
   name: "panda",
-  aliases: [],
+  aliases: ["pandaa"],
   category: "Image",
   description: "Return A Random Panda!",
   usage: "Panda",

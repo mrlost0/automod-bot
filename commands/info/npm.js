@@ -4,7 +4,7 @@ const moment = require("moment");
 module.exports = {
   name: "npm",
   description: "Check for packages on npm!",
-  category: "info",
+  category: "search",
   run: async (client, message, args) => {
     let query = args.join(' ');
     if (!query) query = await awaitMessages(message);

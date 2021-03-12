@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 module.exports = {
      
         name: "discord",
-        category: "info",
+        category: "search",
         aliases: ["discorddocs", "djs", "docs"],
     
     run: async(client, message, args) => {

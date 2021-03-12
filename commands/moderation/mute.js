@@ -2,9 +2,9 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "mute",
-  description: "mute someone",
-  catagory: "moderation",
-  usage: "mute <@mention> .<reason>",
+  aliases: ["mutes", "muted"],
+  category: "moderation",
+  description: "muet",
   run: async (client, message, args) => {
     if (!message.member.hasPermission("MANAGE_ROLES")) {
       return message.channel.send("sorry you need permission to mute someone");

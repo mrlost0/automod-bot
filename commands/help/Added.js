@@ -3,7 +3,7 @@ const { parse } = require("twemoji-parser");
 const { MessageEmbed } = require("discord.js");
 module.exports = {
     name: "add-these",
-    category: "modration",
+    category: "moderation",
     run: async (client, message, args) => {
         if (!message.member.hasPermission("MANAGE_EMOJIS")) {
 return message.channel.send(`:x: | **You Don't Have Permission To Use This Command**`)

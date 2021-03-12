@@ -7,7 +7,9 @@ module.exports = {
   usage: "setwelcome <#channel>",
   description: "Set the welcome channel",
   run: (client, message, args) => {
-    
+     if (!message.member.hasPermission("ADMINISTRATION")) {
+      return message.channel.send("sorry you need permission to a");
+    }
     let channel = message.mentions.channels.first()
     
     if(!channel) {

@@ -3,7 +3,7 @@ const random = new Random();
 
 module.exports = {
   name: "neko",
-  category: "fun",
+  category: "Image",
   description: "Get some neko images",
   run: async (client, message, args) => {
     

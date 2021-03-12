@@ -1,46 +1,31 @@
-
-const Discord = require("discord.js")
-
-const { version } = require("discord.js");
-const moment = require("moment");
-const m = require("moment-duration-format");
-let os = require('os')
-let cpuStat = require("cpu-stat")
-const ms = require("ms")
-
-
-
-
+const db = require("quick.db");
+const Discord = require ("discord.js")
+const { version } = require('../../package.json');
+const ms = require('pretty-ms');
+const { version: discordjsVersion } = require('discord.js');
 module.exports = {
-    name: "botinfo",
-    category: "info",
-  description: "Sends detailed info about the client",
-  usage: "[command]",
-  run: async (client, message, args) => {
-  //command
-  let cpuLol;
-  cpuStat.usagePercent(function(err, percent, seconds) {
-      if (err) {
-          return console.log(err);
-      }
-      const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
-      const botinfo = new Discord.MessageEmbed()
-          .setAuthor(client.user.username)
-          .setTitle("__**Stats:**__")
-          .setColor("RANDOM")
-          .addField("⏳ Mem Usage", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} / ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`, true)
-          .addField("⌚️ Uptime ", `${duration}`, true)
-          .addField("📁 Users", `${client.users.cache.size}`, true)
-          .addField("📁 Servers", `${client.guilds.cache.size}`, true)
-          .addField("📁 Channels ", `${client.channels.cache.size}`, true)
-          .addField("👾 Discord.js", `v${version}`, true)
-          .addField("🤖 Node", `${process.version}`, true)
-          .addField("🤖 CPU", `\`\`\`md\n${os.cpus().map(i => `${i.model}`)[0]}\`\`\``)
-          .addField("🤖 CPU usage", `\`${percent.toFixed(2)}%\``, true)
-          .addField("🤖 Arch", `\`${os.arch()}\``, true)
-          .addField("💻 Platform", `\`\`${os.platform()}\`\``, true)
-          .addField("API Latency", `${(client.ws.ping)}ms`)  
-      message.channel.send(botinfo)
-  });
-  }
-  };
+
+  name: "botinfo",
+
+  category: "info",
+    aliases: ['uptime', 'botstats', 'stats'],
+    description: 'Check\'s bot\'s status',
+  run: async (client, message, args, del, member) => {
+   message.delete();
+      message.channel.send(new Discord.MessageEmbed()
+            .setColor('RANDOM')
+            .setTitle(`Autmodv12 v${version}`)
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
+            .addField('Uptime', `${ms(client.uptime)}`, true)
+            .addField('WebSocket Ping', `${client.ws.ping}ms`, true)
+            .addField('Memory', `${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB RSS\n${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB Heap`, true)
+            .addField('Guild Count', `${client.guilds.cache.size} guilds`, true)
+            .addField(`User Count`, `${client.users.cache.size} users`, true)
+            .addField('Commands', `${client.commands.size} cmds`,true)
+            .addField('Node', `${process.version} on ${process.platform} ${process.arch}`, true)
+            .addField('Cached Data', `${client.users.cache.size} users\n${client.emojis.cache.size} emojis`, true)
+            .addField('Discord.js', `${discordjsVersion}`, true)
+            .setTimestamp()
+        );
+    }
+}

@@ -52,7 +52,6 @@ client.on("message", async message => {
   if (command) command.run(client, message, args);
 });
 
-
 client.on("guildMemberAdd", async member => {
 
   let chx = db.get(`welchannel_${member.guild.id}`);
@@ -85,7 +84,9 @@ client.on("guildMemberAdd", async member => {
 
 });
 
-//chatbot
+//ctabot
+
+
 
 client.on("message", async message => {
 if (message.channel.name == "chatbot") {

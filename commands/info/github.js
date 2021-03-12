@@ -6,7 +6,7 @@ const fetch = require("node-fetch")
 module.exports = {
     name: "github",
     aliases: ["git"],
-    category: "info",
+    category: "search",
     usage: "Github <Name>",
     exmaple: "Github Emoji",
     description: `Github User Account Information!`,
