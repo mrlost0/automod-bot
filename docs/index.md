@@ -1,37 +1,146 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Khanmanan/automod-bot/edit/Repl.it/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
+    <title>Commands!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
 
-### Markdown
+<div>
+    <header>
+        <h1>Automodv12 Bot Commands!</h1>
+        <br>
+        <h2> All commnds catgeroy here Commands</h2>
+    </header>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <p>⚫ MODERATION - KICK,SETWELCOME,BAN,MUTE.ETC</p>
+                    <br>
+                    <p>⚫ IMAGE - SPEED, WASTED,RIP.ETC</p>
+                    <br>
+                    <p>⚫ GIVEWAY - START,END,.ETC</p>
+                    <br>
+                    <p>⚫ INFO - BOTINFO ,USERINFO,SERVERINFO,</p>
+                    <br>
+                    <p>⚫ FUN - MEME,SLAP.ETC</p>
+                    <br>
+                    <p>⚫ ECONOMY -  WORK ,BUY,GIVE.ETC</p>
+                    <br>
+                    <p>⚫ A BOT WITH 90+ COMMNDS</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <p>⚫ qkick - Kick user</p>
+                    <br>
+                    <p>⚫ qban - Bans user</p>
+                    <br>
+                    <p>⚫ qmute - Mutes user</p>
+                    <br>
+                    <p>⚫ qunmute - Unmutes user</p>
+                    <br>
+                    <p>⚫ qticket - Creates support ticket</p>
+                    <br>
+                    <p>⚫ qclear - Clears messages</p>
+                    <br>
+                    <p>⚫ qrules - Shows embed with rules</p>
+                </div>
+            </div>
+            <button class="btn"  onclick="location.href='https://automodbot.tk'">Back To Main Page</button>
+            <br>
+            <h4>Copyright © AUTOMODBOT 2021</h4>
+        </div>
+    </body>
+</div>
 
-```markdown
-Syntax highlighted code block
+<style>
 
-# Header 1
-## Header 2
-### Header 3
+.container {
+    width: 1200px;
+    position: relative;
+    left: 430px;
+}
+.container .box {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: rgb(32, 32, 32);
+    float: left;
+    margin: 15px;
+    border-radius: 10px;
+}
+.btn {
+        margin-left: 350px;
+        background-color: rgba(27, 27, 27, 0.815);
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        transition-duration: 0.5s;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        
+    }
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: aqua;
+    margin-bottom: 15px;
+}
 
-**Bold** and _Italic_ and `Code` text
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: white;
+    margin-left: 537px;
+}
 
-[Link](url) and ![Image](src)
-```
+body {
+    background-color: #42455a;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+h4 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: white;
+    margin-left: 375px;
+}
+p {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+}
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Khanmanan/automod-bot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+</style>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button toggler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="outer-div">
+        <div id="inner-div"></div>
+    </div>
+
+    <h1 id="msg">Click To Toggle</h1>
+    <script src="script.js"></script>
+</body>
+</html>
+<meta name="color-scheme" content="dark light">
