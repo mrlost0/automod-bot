@@ -10,6 +10,13 @@ Id682981714523586606
 - ✅ Info
 - ✅ giveway
 - ✅ fun
+- ✅ help
+- ✅ economy 
+- ✅ nsfw 
+- ✅ utility 
+- ✅ owner
+
+
 
 A FUN AND MODERATION BOT WITH 110+ COMMNDS 
 A FUN AND MODERATION BOT WITH 110+ COMMNDS 
