@@ -2,7 +2,7 @@ const db = require("quick.db")
 
 class Util {
   static getLevel(xp, extra = false) {
-  let level = 0;
+  let level = 1;
     
     //WHILE LOOP
     while(xp >= Util.getLevelxp(level)) {
@@ -15,7 +15,7 @@ class Util {
 
   
   static getLevelxp(level) {
-    return 5 * Math.pow(level, 2) + 50 * level + 200;
+    return 5 * Math.pow(level, 2) + 50 * level + 100;
   }
   
   static getInfo(exp) {

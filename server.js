@@ -228,18 +228,14 @@ var channel = client.channels.cache.get('812592647876247579');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+client.on
 client.on("ready", () => {
     client.user.setActivity(`qhelp |Servers Count - ${client.guilds.cache.size}`, { type: "WATCHING"})
 })
+
+
+
+
+
+
 client.login(process.env.TOKEN);

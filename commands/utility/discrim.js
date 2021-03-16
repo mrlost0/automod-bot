@@ -4,7 +4,7 @@ const sourcebin = require('sourcebin_js');
 module.exports = {
         name: "discriminator",
         usage: `discrim 0007`,
-        category: "Utility",
+        category: "utility",
         aliases: ["discrim"],
   run: async (client, message, args) => {
     

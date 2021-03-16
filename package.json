@@ -15,6 +15,7 @@
     "await": "^0.2.6",
     "axios": "^0.21.1",
     "canvacord": "^5.0.8",
+    "canvas-constructor": "^4.1.0",
     "canvas-senpai": "^0.1.6",
     "cpu-stat": "^2.0.1",
     "di": "0.0.1",

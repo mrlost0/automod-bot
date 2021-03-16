@@ -11,7 +11,9 @@ Id682981714523586606
 - ✅ giveway
 - ✅ fun
 
-A FUN AND MODERATION BOT WITH 85+ COMMNDS 
+A FUN AND MODERATION BOT WITH 110+ COMMNDS 
+A FUN AND MODERATION BOT WITH 110+ COMMNDS 
+A FUN AND MODERATION BOT WITH 110+ COMMNDS 
 IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
 
 
@@ -47,5 +49,5 @@ Glitch: [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a
 
 Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](https://repl.it/github/Khanmanan/automod-bot)
 
-
-##copyright ©️ 2020 Automod v1administer
+### START THE PROJECT IF U LIKE :)
+##copyright ©️ 2020 Automod v12
