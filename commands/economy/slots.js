@@ -9,7 +9,7 @@ module.exports = {
         category: "economy",
         description: "Slot game | 9x - rare | 3x - common",
         usage: "<amount>",
-        accessableby: "everyone"
+        accessableby: ""
     ,
     run: async (bot, message, args) => {
 

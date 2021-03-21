@@ -1,6 +1,6 @@
 ## MY FISRT MODERATION BOT MADE USING DISCORD.JS 
 ## Made by tag:- cw Khan#6496
-Id682981714523586606
+Id 682981714523586606
 ## Categories 📑
 
 
@@ -18,8 +18,7 @@ Id682981714523586606
 
 
 
-A FUN AND MODERATION BOT WITH 110+ COMMNDS 
-A FUN AND MODERATION BOT WITH 110+ COMMNDS 
+
 A FUN AND MODERATION BOT WITH 110+ COMMNDS 
 IF YOU WANT ADD MORE COOMNDS JOIN SUPPORT SERVER 😁
 
@@ -57,4 +56,4 @@ Glitch: [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a
 Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/automod-bot)](https://repl.it/github/Khanmanan/automod-bot)
 
 ### START THE PROJECT IF U LIKE :)
-##copyright ©️ 2020 Automod v12
+##copyright ©️ 2021 Automod v12:
